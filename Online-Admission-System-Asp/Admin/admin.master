@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="Admin_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            height: 122px;
+        }
+        .style4
+        {
+            height: 109px;
+        }
+        .style5
+        {
+            height: 122px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="1" class="style1">
+            <tr>
+                <td bgcolor="#66FFFF" class="style4" colspan="8">
+                    <asp:Label ID="Label1" style="position:absolute; top: 49px; left: 316px;"
+                        runat="server" Text="University Admission System" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="XX-Large" 
+                        ForeColor="#990099"></asp:Label>
+                </td>
+            </tr>
+            <tr bgcolor="#990099">
+                <td class="style5">
+                    <asp:LinkButton ID="LinkButton8" runat="server" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="Large" 
+                        ForeColor="#66FFFF" PostBackUrl="~/Admin/AdminHome.aspx">Home</asp:LinkButton>
+                </td>
+                <td class="style3">
+                    <asp:LinkButton ID="LinkButton9" runat="server" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="Large" 
+                        ForeColor="#66FFFF" PostBackUrl="~/Admin/university.aspx">Universities</asp:LinkButton>
+                </td>
+                <td class="style3" 
+                    style="font-family: 'Book Antiqua'; font-size: large; font-weight: bold; font-style: italic; color: #00FFFF">
+                    <asp:LinkButton ID="LinkButton10" runat="server" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="Large" 
+                        ForeColor="#66FFFF" PostBackUrl="~/Admin/colleges.aspx">Colleges</asp:LinkButton>
+                </td>
+                <td class="style3">
+                    <asp:LinkButton ID="LinkButton11" runat="server" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="Large" 
+                        ForeColor="#66FFFF" PostBackUrl="~/Admin/courses.aspx">Courses</asp:LinkButton>
+                </td>
+                <td class="style3">
+                    <asp:LinkButton ID="LinkButton12" runat="server" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="Large" 
+                        ForeColor="#66FFFF" PostBackUrl="~/Admin/Branches.aspx">Branches</asp:LinkButton>
+                </td>
+                <td class="style3">
+                    <asp:LinkButton ID="LinkButton13" runat="server" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="Large" 
+                        ForeColor="#66FFFF" PostBackUrl="~/Admin/seats.aspx">Seats</asp:LinkButton>
+                </td>
+                <td class="style3">
+                    <asp:LinkButton ID="LinkButton14" runat="server" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="Large" 
+                        ForeColor="#66FFFF">Reports</asp:LinkButton>
+                </td>
+                <td class="style3">
+                    <asp:LinkButton ID="LinkButton7" runat="server" Font-Bold="True" 
+                        Font-Italic="True" Font-Names="Book Antiqua" Font-Size="Large" 
+                        ForeColor="#66FFFF" PostBackUrl="~/starting page/login.aspx">LogOut</asp:LinkButton>
+                </td>
+            </tr>
+            <tr bgcolor="#990099">
+                <td class="style5" colspan="8">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
